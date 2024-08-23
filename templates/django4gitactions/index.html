@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem em Tela Cheia</title>
+    <style>
+        /* Reset de margin e padding para evitar espaçamento indesejado */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Estilo para a imagem ocupar a tela inteira */
+        .fullscreen-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cobre a tela sem distorcer a imagem */
+        }
+    </style>
+</head>
+<body>
+	<img src="{% static 'img/busque-conhecimento.png' %}"  alt="busque-conhecimento" class="fullscreen-image">
+</body>
+</html>
+
